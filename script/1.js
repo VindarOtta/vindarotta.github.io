@@ -58,6 +58,7 @@ $(function() {
       document.getElementById('gr_one').style.marginBottom = "2px";
       document.getElementById('gr_two').style.fontSize = "24px";
       document.getElementById('gr_two').style.letterSpacing = "1px";
+      document.getElementById('gr_two').style.paddingLeft = "0px";
     }
   });
 /* Animations onLoad */
@@ -77,6 +78,7 @@ $(function() {
       document.getElementById('gr_one').style.marginBottom = "2px";
       document.getElementById('gr_two').style.fontSize = "24px";
       document.getElementById('gr_two').style.letterSpacing = "1px";
+      document.getElementById('gr_two').style.paddingLeft = "0px";
     } else {
       document.getElementById('toggle-container').style.clipPath = 'inset(0 0 0 50%)';
       toggleNumber = !toggleNumber;
