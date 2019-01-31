@@ -320,15 +320,15 @@ function hasScrolled() {
         return;    
     if (check > lastScrollTop && check > 40){
         // Scroll Down
-        $(arrowTop).css({"top": "-50px"});
+        $(arrowTop).css({"top": "-50px", "transition": "top 0.2s ease-in"});
     } else {
         // Scroll Up
         if(check + $(window).height() < $(document).height()) {
-            $(arrowTop).css({"top": "30px"});
+            $(arrowTop).css{"top": "30px", "transition": "top 0.3s ease-out"});
         }
       } 
   } else {
-    $(arrowTop).css({"top": "-50px"});
+    $(arrowTop).css({"top": "-50px", "transition": "top 0.2s ease-in"});
   }   
   lastScrollTop = check;
 }
