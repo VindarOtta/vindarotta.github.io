@@ -236,7 +236,7 @@ body {
 .load-anim5 {
   animation-name: fifthAnimation;
   animation-fill-mode: forwards;
-  animation-duration: 0.5s;
+  animation-duration: 0.55s;
   animation-timing-function: ease-out;
 }
 @keyframes fifthAnimation {
@@ -250,7 +250,7 @@ body {
 .load-anim6 {
   animation-name: sixthAnimation;
   animation-fill-mode: forwards;
-  animation-duration: 0.55s;
+  animation-duration: 0.6s;
   animation-timing-function: ease-out;
 }
 @keyframes sixthAnimation {
@@ -264,7 +264,7 @@ body {
 .load-anim7 {
   animation-name: seventhAnimation;
   animation-fill-mode: forwards;
-  animation-duration: 0.6s;
+  animation-duration: 0.65s;
   animation-timing-function: ease-out;
 }
 @keyframes seventhAnimation {
