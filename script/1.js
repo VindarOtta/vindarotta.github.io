@@ -324,7 +324,7 @@ function hasScrolled() {
     } else {
         // Scroll Up
         if(check + $(window).height() < $(document).height()) {
-            $(arrowTop).css({"top": "30px", "transition": "top 0.3s ease-out"});
+            $(arrowTop).css({"top": "30px", "transition": "top 0.3s ease"});
         }
       } 
   } else {
