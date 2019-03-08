@@ -87,9 +87,10 @@ $(function() {
   }
 }); // ЭТО КОНЕЦ ОГРОМНОЙ ФУНКЦИИ
 
-/* Ссылки в новой вкладке */
+/* Ссылки */
 function linkOpen(url) {
-  window.open(url);
+  //window.open(url); в новой вкладке
+  window.location.assign(url);
 }
 /* Easter egg link */
 function eggOpen(){
