@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+<script>
+  window.onload = function() {
+     window.location.href = 'https://www.youtube.com/channel/UCfE2d_RxIVNNxOgp4PAFsEQ';
+  }
+</script>
+  <link rel="icon" sizes="192x192" href="images/telegraph.png">
+  <title>Just Music</title>
+</head>
+    <body>
+    
+    </body>
+</html>
