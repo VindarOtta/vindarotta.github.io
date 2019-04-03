@@ -118,6 +118,7 @@ a {
 	letter-spacing: 0.07em;
 	z-index: 3;
 	cursor: pointer;
+	user-select: none;
 }	
 #menu .social {
 	margin-left: calc(50% - 48px);
@@ -184,9 +185,6 @@ a {
 #menu .list #blog:active #white_line3 {
 	width: 49px;
 }
-#menu .list #blog {
-	user-select: none;
-}
 #menu .list #blog .notAvailable {
 	font-size: 7px;
 	text-transform: uppercase;
@@ -212,7 +210,6 @@ a {
 	margin-right: 8%;
 	margin-top: 64px;
 	cursor: pointer;
-	user-select: none;
 }
 .header .contact {
 	border: 2px solid #90281B;
@@ -228,6 +225,7 @@ a {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: #90281B;
+	user-select: none;
 }
 /* Tabs Menu */
 .nav {
