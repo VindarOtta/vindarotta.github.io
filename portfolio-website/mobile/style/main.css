@@ -1,0 +1,803 @@
+@font-face {
+font-family: 'Brandon Grotesque';
+src: url('../fonts/BrandonGrotesque-Black.ttf');
+font-weight: 900;
+font-style: normal;
+}
+@font-face {
+font-family: 'Brandon Grotesque';
+src: url('../fonts/BrandonGrotesque-Medium.ttf');
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: 'Brandon Grotesque';
+src: url('../fonts/BrandonGrotesque-Regular.ttf');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Brandon Grotesque';
+src: url('../fonts/BrandonGrotesque-RegularItalic.ttf');
+font-weight: normal;
+font-style: italic;
+}
+body {
+  background: white;
+  font-family: 'Brandon Grotesque';
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent; 
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+::selection {
+  color: #fff; 
+  background: rgba(144, 40, 27, 0.8);
+}
+/* Menu (Mobile) */
+#nav-container {
+	position: fixed;
+	width: 47px;
+	height: 44px;
+	top: 0;
+	right: 0;
+	background: none;
+	z-index: 1;
+	cursor: pointer;
+}
+#nav-icon {
+  width: 23px;
+  height: 15px;
+  position: fixed;
+  z-index: 1;
+  float: right;
+  right: 11px;
+  top: 15px;
+  opacity: 1;
+  transition: .3s ease;
+  cursor: pointer;
+}
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  border-radius: 9px;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8);
+  transition: .35s ease;
+  width: 100%;
+  cursor: pointer;
+}
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+#nav-icon span:nth-child(2) {
+  top: 6px;
+}
+#nav-icon span:nth-child(3) {
+  top: 12px;
+}
+#menu {
+	position: fixed;
+	top: 0;
+	right: -195px;
+	width: 195px;
+	height: 100%;
+	background: rgba(144, 40, 27, 0.95); 
+	z-index: 0;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	transition: right 0.3s ease;
+	z-index: 2;
+	display: none;
+}  
+#menu .close {
+	position: absolute;
+	right: 12px;
+	top: 15px;
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+	z-index: 3;
+}
+#menu .list {
+	text-align: center;
+	padding-top: 15vh;
+	z-index: 3;
+}
+#menu .list .text {
+	font-family: 'Brandon Grotesque';
+	color: white;
+	font-size: 21px;
+	line-height: 41px;
+	letter-spacing: 0.07em;
+	z-index: 3;
+	cursor: pointer;
+}	
+#menu .social {
+	margin-left: calc(50% - 48px);
+	width: 100px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10vh;
+	z-index: 3;
+	cursor: pointer;
+}
+#menu .social i {
+	color: rgba(255, 255, 255, 0.75);
+}	
+#menu .social i:nth-child(1) {
+	font-size: 17px;
+}	
+#menu .social i:nth-child(2) {
+	font-size: 21px;
+	transform: matrix(1, 0, 0, 1, 0, -1.5);
+}
+#menu .social i:nth-child(3) {
+	font-size: 20px;
+	transform: matrix(1, 0, 0, 1, 0, -1);
+}	
+#menu .list #white_line {
+	position: absolute;
+	width: 0px;
+	height: 1.8px;
+	margin-left: calc(50% - 184px);
+	margin-top: 35px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	z-index: 2;
+	transition: width 0.3s ease;
+}
+#menu .list #portfolio:hover #white_line {
+	width: 87px;
+}
+#menu .list #white_line2 {
+	position: absolute;
+	width: 0px;
+	height: 1.8px;
+	margin-left: calc(50% - 159px);
+	margin-top: 35px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	z-index: 2;
+	transition: width 0.3s ease;
+}
+#menu .list #about:hover #white_line2 {
+	width: 65px;
+}	
+#menu .list #white_line3 {
+	position: absolute;
+	width: 0px;
+	height: 1.8px;
+	margin-left: calc(50% - 142px);
+	margin-top: 35px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	z-index: 2;
+	transition: width 0.3s ease;
+}
+#menu .list #blog:active #white_line3 {
+	width: 49px;
+}
+#menu .list #blog .notAvailable {
+	font-size: 7px;
+	text-transform: uppercase;
+	position: absolute;
+	color: white;
+	margin-left: 39px;
+	margin-top: -9px;
+}	
+/* Header */
+.header .name {
+	float: left;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 48px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.8);
+	padding-left: 8%;
+	padding-top: 55px;
+}
+.header .contact-button {
+	float: right;
+	margin-right: 8%;
+	margin-top: 64px;
+	cursor: pointer;
+}
+.header .contact {
+	border: 2px solid #90281B;
+	box-sizing: border-box;
+	border-radius: 4px;
+	width: 95px;
+	height: 29px;
+	text-align: center;
+}
+.header .contact span {
+	font-weight: bold;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #90281B;
+}
+/* Tabs Menu */
+.nav {
+	display: inline-block;
+	width: 100%;
+	padding-top: 35px;
+	padding-left: 8%;
+	border-bottom: 1.1px solid rgba(0, 0, 0, 0.2);
+}
+.nav .tab-container {
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	cursor: pointer;
+}
+.nav .tab-container .tab {
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 17px;
+	letter-spacing: 0.01em;
+	font-weight: 500;
+}
+.nav .tab-container .tab span{
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.005em;
+}	
+.nav .tab-container .active {
+	color: #90281B;
+}
+.nav #tabLine{
+	background: #90281B;
+	border-radius: 10px;
+	position: absolute;
+	width: 100px;
+	height: 2px;
+	margin-top: -1px;
+	left: 8%;
+	transition: left 0.35s ease;
+}
+/* All Tabs */
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  width: 84%;
+  margin-left: 8%;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  animation: fadeEffect .35s linear;
+  transition: all 0.35s ease;
+}
+@keyframes fadeEffect {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+}
+/* IMG Grid Tab */
+.row .column {
+  padding: 0px 4px;
+  -ms-flex: 50%; 
+  flex: 50%;
+  max-width: 50%;
+}
+.row .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 2px;
+  cursor: pointer;
+}
+/* Project Grid Tab */
+#ProjectsContent .element {
+  margin-top: 50px;
+  cursor: pointer;
+  -ms-flex: 80%; 
+  flex: 80%;
+  max-width: 80%;
+  margin-left: 10%;
+}
+#ProjectsContent .element:nth-child(1) {
+  margin-top: 0px;
+}	
+#ProjectsContent .element .name {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.8);
+}
+#ProjectsContent .element .black {
+  display: inline-block;
+  height: 4px;
+  width: 35px;
+  margin-bottom: 4px;
+  border-radius: 10px 0 0 10px;
+  background: rgba(0, 0, 0, 0.8);
+}
+#ProjectsContent .element .date {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.4);
+  float: right;
+  margin-right: 10px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+#ProjectsContent .image {
+  height: 43.5vw;
+  border-radius: 3px;
+  background-position: 50% 5%;
+  background-size: cover;
+  transition: all 0.3s ease;
+}
+/* Animation Tab */
+#AnimationContent {
+	justify-content: center;
+}
+#AnimationContent .soon {
+	margin-top: 60px;
+	font-size: 6vw;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+	padding-bottom: 250px;
+	transition: font-size 0.15s ease;
+}
+/* The Modal Image */
+#myModal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  padding-top: 86px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.75);
+}
+#myModal .modal-content {
+  margin: auto;
+  display: block;
+  max-width: 850px;
+  max-height: 700px;
+}
+#myModal .modal-content {  
+  animation-name: zoom;
+  animation-duration: 0.25s;
+}
+@keyframes zoom {
+  from {transform: scale(0.85)} 
+  to {transform: scale(1)}
+}
+#myModal .close {
+  position: absolute;
+  padding: 29px;
+  right: 0;
+  top: 0;
+  color: black;
+  transition: 0.15s;
+  cursor: pointer;
+}
+#myModal .close:active {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* Footer | Email */
+.footer {
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+}
+.footer .black {
+	position: absolute;
+  	height: 4px;
+  	width: 34px;
+  	background: rgba(0, 0, 0, 0.8);
+  	margin-left: -17px;
+  	margin-top: -20px;
+}
+.footer .email {
+	font-size: 19.5px;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: 500;
+	text-decoration: underline;
+	cursor: pointer;
+	letter-spacing: 0.01em;
+	transition: font-size 0.1s ease, transform 0.3s;
+	width: 210px;
+	margin-left: calc(50% - 105px);
+}
+.footer .email:active {
+	font-size: 19.1px;
+}
+.footer .tip{
+	font-size: 17.5px;
+	color: rgba(0, 0, 0, 0.55);
+	letter-spacing: 0.07em;
+	font-style: italic;
+	margin-top: -1px;
+	transition: font-size 0.1s ease;
+}
+/* Page About */
+.content-about .name {
+	text-align: center;
+	font-weight: 900;
+	font-size: 20px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: #90281B;
+	padding-top: 5%;
+}
+.content-about .text {
+	margin-top: 15px;
+	margin-left: calc(50% - 150px);
+	text-align: center;
+	width: 300px;
+	font-weight: 420;
+	font-size: 25px;
+	letter-spacing: 0.07em;
+	color: #000000;
+}
+.content-about #Dragon {
+	right: 0;
+	position: absolute;
+	width: 68%;
+	top: 20%;
+	z-index: -1;
+	transition: all 0.3s ease;
+}	
+.content-about .button {
+	position: absolute;
+	margin-left: calc(50% - 115px);
+	border-radius: 50px;
+	background: #90281B;
+	width: 230px;
+	height: 60px;
+	font-weight: 900;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.1em;
+	padding-top: 11px;
+	bottom: 80px;
+	user-select: none;
+	cursor: pointer;
+	transition: 0.3s transform ease;
+}	
+.content-about .button:active {
+	transform: scale(0.98);
+}
+.content-about .social {
+	position: absolute;
+	bottom: 35px;
+	margin-left: calc(50% - 50px);
+	width: 100px;
+	display: flex;
+	justify-content: space-between;
+	z-index: 3;
+	cursor: pointer;
+}
+.content-about .social i {
+	color: rgba(0, 0, 0, 0.4);
+}	
+.content-about .social i:nth-child(1) {
+	font-size: 17px;
+}	
+.content-about .social i:nth-child(2) {
+	font-size: 21px;
+	transform: matrix(1, 0, 0, 1, 0, -1.5);
+}
+.content-about .social i:nth-child(3) {
+	font-size: 20px;
+	transform: matrix(1, 0, 0, 1, 0, -1);
+	font-weight: 700;
+}	
+/* Adaptation */
+@media screen and (max-width: 900px) {
+	#myModal .modal-content {
+  	  max-width: 700px;
+	}
+	.content-about #Dragon {
+		width: 77%;
+		top: 21%;
+	}	
+}	
+@media screen and (max-width: 750px) {
+	#myModal .modal-content {
+  	  max-width: 550px;
+	}
+	.content-about #Dragon {
+		width: 85%;
+		top: 22%;
+	}	
+}
+@media screen and (max-width: 600px) {
+	.row {
+		margin-top: 25px;
+		margin-bottom: 40px;
+	}
+	.row .column {
+	  padding: 0px 2px;
+	}
+	.row .column img {
+	  margin-top: 4px;
+	  border-radius: 1px;
+	}
+	.footer {
+	  padding: 30px 0;
+	}
+	.footer .black {
+  	  height: 3px;
+  	  width: 28px;
+  	  margin-left: -14px;
+  	  margin-top: -16px;
+	}
+	.footer .email {
+	  font-size: 17px;
+	  width: 210px;
+	  margin-left: calc(50% - 105px);
+	}
+	.footer .email:active {
+	  font-size: 16.6px;
+	}
+	.footer .tip{
+	  font-size: 15px;
+	}
+	#nav-container {
+	  width: 40px;
+	  height: 42px;
+	}
+	#nav-icon {
+	  width: 17px;
+	  height: 11px;
+	  right: 11px;
+	  top: 15px;
+	}
+	#menu .close {
+	  width: 15px;
+	  height: 15px;
+	}
+	.header .name {
+		font-size: 18px;
+	}
+	.header .contact {
+		width: 85px;
+		height: 28px;
+	}
+	.header .contact span {
+		font-size: 12px;
+	}
+	#ProjectsContent .element {
+ 	  margin-top: 25px;
+ 	  -ms-flex: 85%; 
+	  flex: 85%;
+	  max-width: 85%;
+	  margin-left: 7.5%;
+	}
+	#ProjectsContent .element .name {
+	  margin-left: 12px;
+	  font-size: 18px;
+	}
+	#ProjectsContent .element .black {
+	  height: 3px;
+	  width: 30px;
+	}
+	#ProjectsContent .element .date {
+	  font-size: 12.5px;
+	  margin-right: 3px;
+	  margin-top: 6px;
+	}
+	#ProjectsContent .image {
+	  height: 43.5vw;
+	  border-radius: 1px;
+	}
+	#myModal .modal-content {
+  	  max-width: 350px;
+	}
+	.content-about #Dragon {
+		width: 90%;
+		top: 23%;
+	}
+}
+@media screen and (max-width: 400px) {
+	.header .name {
+		font-size: 16px;
+	}
+	.header .contact {
+		width: 82px;
+		height: 28px;
+	}
+	.header .contact span {
+		font-size: 10.5px;
+	}
+	#nav-container {
+	  width: 30px;
+	  height: 40px;
+	}
+	#nav-icon {
+	  width: 15px;
+	  height: 9px;
+	  right: 9px;
+	}
+	#menu .close {
+	  width: 13px;
+	  height: 13px;
+	  right: 10px;
+	}
+	.nav .tab-container {
+	  width: 85px;
+	}
+	.nav .tab-container .tab {
+		font-size: 15px;
+	}
+	.nav .tab-container .tab span{
+		font-size: 14px;
+	}	
+	.nav #tabLine{
+		width: 85px;
+	}
+	#ProjectsContent .element {
+ 	  -ms-flex: 86%; 
+	  flex: 86%;
+	  max-width: 86%;
+	  margin-left: 7%;
+	}
+	#ProjectsContent .element .name {
+	  font-size: 15.5px;
+	  margin-left: 3px;
+	}
+	#ProjectsContent .element .black {
+	  height: 2px;
+	  width: 19px;
+	  margin-bottom: 4px;
+	}
+	#ProjectsContent .element .date {
+	  font-size: 10.5px;
+	  margin-top: 5px;
+	}
+	#ProjectsContent .image {
+	  height: 44vw;
+	}
+	#myModal .modal-content {
+  	  max-width: 280px;
+	}
+	.content-about .name {
+		font-size: 21px;
+		padding-top: 6.5%;
+	}
+	.content-about .text {
+		font-size: 21px;
+	}
+	.content-about #Dragon {
+		width: 90%;
+		top: 28%;
+	}
+	.content-about .button {
+		margin-left: calc(50% - 96px);
+		width: 192px;
+		height: 50px;
+		font-size: 23px;
+		padding-top: 9px;
+		bottom: 65px;
+	}	
+	.content-about .social {
+		bottom: 20px;
+	}
+}	
+@media screen and (max-width: 310px) {
+	.header .name {
+		font-size: 14px;
+	}
+	.header .contact {
+		width: 76px;
+	}
+	#nav-container {
+	  width: 25px;
+	}
+	#nav-icon {
+	  width: 14px;
+	  right: 5px;
+	}
+	#menu .close {
+	  right: 6px;
+	}
+	.nav .tab-container {
+	  width: 67px;
+	}
+	.nav .tab-container .tab {
+		font-size: 13px;
+	}
+	.nav .tab-container .tab span{
+		font-size: 12px;
+	}	
+	.nav #tabLine{
+		width: 67px;
+	}
+	#ProjectsContent .element .name {
+	  font-size: 13.5px;
+	  margin-left: 1px;
+	}
+	#ProjectsContent .element .black {
+	  height: 2px;
+	  width: 14px;
+	  margin-bottom: 4px;
+	}
+	#ProjectsContent .element .date {
+	  font-size: 8.5px;
+	  margin-top: 7px;
+	}
+	#myModal .modal-content {
+  	  max-width: 200px;
+	}
+}	
+@media screen and (max-height: 850px) {
+	#myModal .modal-content {
+  	  max-height: 550px;
+  	  padding-top: 50px;
+	}
+}	
+@media screen and (max-height: 600px) {
+	#myModal .modal-content {
+  	  max-height: 350px;
+  	  padding-top: 35px;
+	}
+	.content-about #Dragon {
+		width: 80%;
+		top: 29%;	
+	}
+}	
+@media screen and (max-height: 450px) {
+	#myModal .modal-content {
+  	  max-height: 250px;
+  	  padding-top: 25px;
+	}
+	.content-about #Dragon {
+		display: none;
+	}
+	.content-about .name {
+		font-size: 20px;
+		padding-top: 4%;
+	}
+	.content-about .text {
+		margin-top: 5px;
+		font-size: 21px;
+	}
+	.content-about .button {
+		margin-left: calc(50% - 87px);
+		width: 174px;
+		height: 45px;
+		font-size: 21px;
+		padding-top: 8px;
+		bottom: 55px;
+	}	
+	.content-about .social {
+		bottom: 20px;
+	}
+}
+@media screen and (max-height: 300px) {
+	#myModal .modal-content {
+  	  max-height: 150px;
+  	  padding-top: 15px;
+	}
+}
+/* Preloader */
+#p_prldr {
+position: fixed;
+left: 0;top: 0;right: 0;bottom: 0;
+background: #fff;
+z-index: 130;
+/* font-family: 'Roboto', sans-serif; */
+max-width:100vw;min-width:100vw;
+max-height:100vh;min-height:100vh;
+}
