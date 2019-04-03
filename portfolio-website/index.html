@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="google" content="notranslate">
+	<meta http-equiv="Content-Language" content="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#90281B">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="icon" sizes="192x192" href="images/icon.png">
+	<title>Artist's Website</title>
+</head>
+	<body>
+		<!-- Preloader -->
+		<div id="p_prldr"><div class="contpre"><p id="demo"></p></div></div>
+		<!-- Menu -->
+		<div class="menu" id="hide">
+			<div class="element" id="num1" onclick="anchor(0);">
+				<div class="text"><span>A</span>bout me</div>
+				<span id="white_space"></span>
+				<div class="line line1" id="line1"></div>
+				<div class="line lineRed"></div>
+				<div class="line" id="redOne"></div>
+			</div>
+			<div class="element" id="num2" onclick="anchor(970);">
+				<div class="text"><span>P</span>ortfolio</div>
+				<span id="white_space"></span>
+				<div class="line line2" id="line2"></div>
+				<div class="line lineRed"></div>
+				<div class="line" id="redTwo"></div>
+			</div>
+			<div class="element" id="num3" title="Not Available">
+				<div class="text"><span>B</span>log</div>
+				<span id="white_space"></span>
+				<div class="line line3" id="line3"></div>
+				<div class="line lineRed"></div>
+			</div>
+		</div>	
+		<!-- About -->
+		<section id="one">
+		<div class="container">
+			<div class="postcard">
+				<h1 id="Hi">Hi, my name is <span>Steven</span></h1>
+				<h2 id="London">I'm an award winning illustrator and animation director based in London.</h2>
+				<div id="Contact" class="button">Contact</div>
+				<!-- href="mailto:vindarwork@gmail.com?Subject=I%20need%20a%20website." -->
+				<div class="social">
+					<i id="Tumblr" class="fab fa-tumblr" onclick="linkOpen('http://steve-scott.tumblr.com/')"></i>
+					<i id="Behance" class="fab fa-behance" onclick="linkOpen('https://www.behance.net/SteveScott')"></i>
+					<i id="Insta" class="fab fa-instagram" onclick="linkOpen('https://www.instagram.com/steve_scott__UK/')"></i>
+				</div>
+				<img id="Dragon" src="images/dragon.jpg">
+				<img id="Arrow" src="images/Arrow Down.png" onclick="anchor(970);">
+			</div>
+		</div>
+		</section>
+		<!-- Portfolio -->
+		<section id="two">	
+		<div class="container">
+			<h1>My works</h1>
+			<div class="tabs">
+				<div class="tab" onclick="openTab(event, 'Illustration')" id="IllustrationOpen"><span>I</span>llustration</div>
+				<div class="tab" onclick="openTab(event, 'Animation')" id="AnimationOpen">Animation</div>
+				<div class="tab" onclick="openTab(event, 'Projects')" id="ProjectsOpen">Projects</div>
+			</div>
+			<!-- Tab #1: Photo Grid -->
+			<div class="row" id="Illustration"> 
+		  		<div class="column">
+		    		<img class="lazy" src="images/lazy/fake.jpg" data-src="images/6.jpg" id="img1" onclick="modalImg('img1')" alt="First Image">
+		    		<img class="lazy" src="images/lazy/fake.jpg" data-src="images/2.jpg" id="img2" onclick="modalImg('img2')" alt="Second Image">
+		    		<img class="lazy" src="images/lazy/fake.jpg" data-src="images/5.jpg" id="img3" onclick="modalImg('img3')" alt="">
+		  		</div>
+		  		<div class="column">
+		   			<img class="lazy" src="images/lazy/fake.jpg" data-src="images/9.jpg" id="img4" onclick="modalImg('img4')" alt="">
+		    		<img class="lazy" src="images/lazy/fake.jpg" data-src="images/4.jpg" id="img5" onclick="modalImg('img5')" alt="">
+		    		<img class="lazy" src="images/lazy/fake.jpg" data-src="images/1.jpg" id="img6" onclick="modalImg('img6')" alt="">
+		    		<img class="lazy" src="images/lazy/fake.jpg" data-src="images/10.jpg" id="img7" onclick="modalImg('img7')" alt="">
+		  		</div>  
+		  		<div class="column">
+		    		<img class="lazy" src="images/lazy/fake.jpg" data-src="images/7.jpg" id="img8" onclick="modalImg('img8')" alt="">
+		    		<img class="lazy" src="images/lazy/fake.jpg" data-src="images/8.jpg" id="img9" onclick="modalImg('img9')" alt="">
+		    		<img class="lazy" src="images/lazy/fake.jpg" data-src="images/3.jpg" id="img10" onclick="modalImg('img10')" alt="">
+ 		  		</div>
+			</div>
+			<!-- Tab #2: Text -->
+			<div class="row" id="Animation"> 
+		  		<p class="soon">In the near future</p>
+			</div>
+			<!-- Tab #3: Projects Grid -->
+			<div class="row" id="Projects"> 
+				<div class="project">
+					<div class="element">
+		  				<div class="text">
+		  					<span class="black"></span>
+		  					<p class="name">Editorial Projects</p>
+							<p class="date">Apr-Dec 2018</p>
+		  				</div>
+		  				<div class="image" style="background-image: url('images/4.jpg');"></div>
+		    			<!--<img class="lazy" src="images/lazy/fake.jpg" data-src="images/4.jpg">-->
+		    		</div>
+		    		<div class="element">
+		    			<div class="text">
+		    				<span class="black"></span>
+		    				<p class="name">Cycling Plus</p>
+		    				<p class="date">2017</p>
+		    			</div>
+		    			<div class="image" style="background-image: url('images/11.jpg');"></div>
+		    			<!--<img class="lazy off" src="images/lazy/fake.jpg" data-src="images/11.jpg">-->
+		    		</div>
+		    		<div class="element">
+ 		  				<div class="text">
+ 		  					<span class="black"></span>
+ 		  					<p class="name">Venner Shipley</p>
+ 		  					<p class="date">2015</p>
+ 		  				</div>
+ 		  				<div class="image" style="background-image: url('images/13.jpg');"></div>
+ 		  				<!--<img class="lazy" src="images/lazy/fake.jpg" data-src="images/13.jpg">-->
+ 		  			</div>		
+ 		  		</div>
+		  		<div class="project">
+		  			<div class="element">
+		    			<div class="text">
+		    				<span class="black"></span>
+		    				<p class="name">Historic Royal Palaces</p>
+		    				<p class="date">2018</p>
+		    			</div>
+		    			<div class="image" style="background-image: url('images/5.jpg');"></div>
+		    			<!--<img class="lazy off" src="images/lazy/fake.jpg" data-src="images/5.jpg">-->
+		    		</div>
+		  			<div class="element">	
+		    			<div class="text">
+		    				<span class="black"></span>
+		    				<p class="name">Adobe illustrations</p>
+		    				<p class="date">2016</p>
+		    			</div>
+		    			<div class="image" style="background-image: url('images/1.jpg');"></div>
+		    			<!--<img class="lazy off" src="images/lazy/fake.jpg" data-src="images/1.jpg">-->
+		    		</div>					
+		    	</div>
+ 		  		<div class="project">
+ 		  			<div class="element">
+		    			<div class="text">
+		    				<span class="black"></span>
+		    				<p class="name">Le Bruneau</p>
+		    				<p class="date">2017</p>
+		    			</div>
+		    			<div class="image" style="background-image: url('images/2.jpg');"></div>
+		    			<!--<img class="lazy off" src="images/lazy/fake.jpg" data-src="images/2.jpg">-->
+		    		</div>
+		    		<div class="element">	
+		    			<div class="text">
+		    				<span class="black"></span>
+		    				<p class="name">All Mod Cons</p>
+		    				<p class="date">2016</p>
+		    			</div>
+		    			<div class="image" style="background-image: url('images/15.jpg');"></div>
+		    			<!--<img class="lazy off" src="images/lazy/fake.jpg" data-src="images/15.jpg">-->
+		    		</div>	
+ 		  		</div>	
+			</div>
+			<!-- The Modal IMG -->
+			<div id="myModal">
+			  <img class="close" src="images/Cross2.png"></img>
+			  <img class="modal-content" id="myImg">
+			  <!--<div id="caption"></div>-->
+			</div>
+			<!-- Email footer -->
+			<div class="footer">
+				<span class="black"></span>
+				<p class="email" id="email" onclick="copy('email');">steve@stevescott.com.au</p>
+				<p class="tip">click to copy</p>
+			</div>
+		</div>
+		</section>	
+	<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script> 
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js'></script>
+    <script type='text/javascript' src='script/1.js'></script>	
+	</body>
+</html>		
