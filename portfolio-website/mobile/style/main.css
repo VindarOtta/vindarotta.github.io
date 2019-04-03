@@ -756,8 +756,11 @@ a {
   	  max-height: 350px;
   	  padding-top: 35px;
 	}
+	.content-about .text {
+		margin-top: 7px;
+	}
 	.content-about #Dragon {
-		width: 80%;
+		width: 76%;
 		top: 29%;	
 	}
 }	
