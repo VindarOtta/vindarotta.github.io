@@ -365,10 +365,10 @@ https://codepen.io/spankiejoe/pen/qdRpaW */
     opacity: 1;
 }
 .tile:hover #hov1 {
-    color: #9ae6fe; /* #e5b6c3 */
+    color: #E0E0E0;
 }
 .tile:hover #hov2 {
-    color: #015190;
+    color: #9ae6fe; /* #e5b6c3 */
 }
 .tile:hover #hov3 {
     color: #015190;
