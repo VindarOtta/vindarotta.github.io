@@ -9,8 +9,8 @@
 window.onload = function() {
 	// Upload mobile version
 	if (window.innerWidth > 1050) {	
-  		if (window.location.href != "../index.html") {	
-  			window.location.href = "../index.html";
+  		if (window.location.href != "../") {	
+  			window.location.href = "../";
   		}	
   	}
   	// Trigger lazy load
@@ -27,8 +27,8 @@ window.onload = function() {
 /* Upload mobile version */
 window.onresize = function(){
 	if (window.innerWidth > 1050) {
-		if (window.location.href != "../index.html") {	
-  			window.location.href = "../index.html";
+		if (window.location.href != "../") {	
+  			window.location.href = "../";
   		}	
   	}
 }
