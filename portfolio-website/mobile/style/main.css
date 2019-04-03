@@ -354,7 +354,7 @@ a {
 	font-weight: 500;
 	color: rgba(0, 0, 0, 0.3);
 	letter-spacing: 2px;
-	padding-bottom: 250px;
+	padding-bottom: 25%;
 	transition: font-size 0.15s ease;
 }
 /* The Modal Image */
