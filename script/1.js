@@ -19,14 +19,14 @@ $(function() {
             "_contact": "Contact",
             "_corporate": "Corporate Website",
             "_ecommerce": "e-Commerce Website",
-            "_personal": "Personal Website",
+            "_portfolio": "Portfolio Website",
             "_websites": "And I make websites",
         },
         "russian": {
             "_contact": "Написать",
             "_corporate": "Корпоративный сайт",
             "_ecommerce": "Интернет-магазин",
-            "_personal": "Личный сайт",
+            "_portfolio": "Сайт портфолио",
             "_websites": "И я делаю сайты",
         }
     };
