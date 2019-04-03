@@ -11,12 +11,12 @@ $(window).on('load', function () {
 /* Upload mobile version */
 window.onresize = function(){
 	if (window.innerWidth <= 1050) {
-		if (window.location.href != "mobile/index.html") {	
-  			window.location.href = "mobile/index.html";
+		if (window.location.href != "mobile/") {	
+  			window.location.href = "mobile/";
   		}	
   	} /*else {
-  		if (window.location.href == "mobile/index.html") {
-  			window.location.href = "../index.html";
+  		if (window.location.href == "mobile/") {
+  			window.location.href = "../";
   		}
   	}*/	
 }
@@ -24,8 +24,8 @@ window.onresize = function(){
 window.onload = function() {
 	// Upload mobile version
 	if (window.innerWidth <= 1050) {	
-  		if (window.location.href != "mobile/index.html") {	
-  			window.location.href = "mobile/index.html";
+  		if (window.location.href != "mobile/") {	
+  			window.location.href = "mobile/";
   		}	
   	}	
   	document.getElementById('Hi').classList.add('Hi-load');
