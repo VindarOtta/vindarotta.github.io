@@ -95,7 +95,7 @@ function linkOpen(url) {
 /* Easter egg link */
 function eggOpen(){
 	if(window.matchMedia('(min-width: 800px)').matches) {
- 	 	window.open('terminal.html');
+ 	 	window.open('email');
 	}
 }
 /* Copy on click */
