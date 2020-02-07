@@ -222,8 +222,10 @@ function modalImg(id){
   var span = document.getElementsByClassName("close")[0];
   // Закрыть, когда клик
   document.onclick = function(e){
-    if(e.target.id !== id){
-       modal.style.display = "none";
+    if (modal.style.display == "block" && e.target != modalImg && e.target != img){
+      modal.style.display = "none";
+    }	else {
+      modal.style.display = "block";
     }	
   };
   // Закрыть при нажатии на ESC
